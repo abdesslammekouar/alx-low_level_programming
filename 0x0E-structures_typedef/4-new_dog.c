@@ -17,14 +17,9 @@ if (p == NULL)
 return (NULL);
 p->name = malloc(strlen(name) + 1);
 p->owner = malloc(strlen(owner) + 1);
-if (p->name == NULL)
+if (p->name == NULL || p->owner == NULL)
 {
 free(name);
-free(p);
-return (NULL);
-}
-if (p->owner == NULL)
-{
 free(owner);
 free(p);
 return (NULL);
