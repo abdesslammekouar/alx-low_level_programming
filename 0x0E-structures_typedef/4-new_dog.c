@@ -20,7 +20,6 @@ p->name = malloc(strlen(name) + 1);
 p->owner = malloc(strlen(owner) + 1);
 if (p->name == NULL || p->owner == NULL)
 {
-free(name);
 free(owner);
 free(p);
 return (NULL);
