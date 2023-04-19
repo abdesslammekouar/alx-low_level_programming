@@ -25,12 +25,13 @@ return (NULL);
 }
 if (p->owner == NULL)
 {
-free(p);
 free(owner);
+free(p);
 return (NULL);
 }
 strcpy(p->name, name);
-p->age = age;
 strcpy(p->owner, owner);
+
+p->age = age;
 return (p);
 }
