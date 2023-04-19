@@ -22,7 +22,7 @@ if (p->name == NULL)
 free(p);
 return (NULL);
 }
-p->owner = malloc(strlen(owner) + 1)
+p->owner = malloc(strlen(owner) + 1);
 if (p->owner == NULL)
 {
 free(p->name);
